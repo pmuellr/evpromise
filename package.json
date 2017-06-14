@@ -1,0 +1,32 @@
+{
+  "name": "evpromise",
+  "version": "0.0.1",
+  "description": "promises that always resolve with error / value, and never reject",
+  "main": "evpromise",
+  "license": "MIT",
+  "author": "Patrick Mueller <pmuellr@apache.org> (https://github.com/pmuellr)",
+  "keywords": [
+    "promise",
+    "callback"
+  ],
+  "scripts": {
+    "standard": "standard -v",
+    "test": "npm run -s utest && npm run -s standard",
+    "utest": "node test/index.js | tap-spec",
+    "watch": "nodemon --exec 'npm -s test' --ext js,json"
+  },
+  "devDependencies": {
+    "nodemon": "~1.11.0",
+    "standard": "~10.0.2",
+    "tap-spec": "~4.1.1",
+    "tape": "~4.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmuellr/evpromise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmuellr/evpromise/issues"
+  },
+  "homepage": "https://github.com/pmuellr/evpromise"
+}
